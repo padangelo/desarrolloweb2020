@@ -1,0 +1,164 @@
+
+@import "colormap";
+@import "navMenu";
+@import "footer";
+@import "grilla";
+@import "pages";
+
+
+
+/* Body background color> */
+body {
+    background-color: $bkgColor;
+    }
+ 
+
+/* set colores  H*/
+h1 {
+    color: red;
+    animation-duration: 2s;
+    animation-name: aparecer_h1;
+}
+/* Efecto H1 */
+@keyframes aparecer_h1 {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+ }
+
+h2 {
+    color: rgb(62, 65, 73);
+    font-family: 'Padauk';
+    animation-duration: 3s;
+    animation-name: aparecer_h2;
+}
+   
+
+/* Efecto H2 */
+@keyframes aparecer_h2 {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+ }
+
+
+
+h3 {
+    color:brown;
+}
+
+h4 {
+    color:rgb(255, 236, 68);
+}
+
+div h4 {
+    text-align: center;
+    margin: auto;
+    font-size: 2rem;
+}
+
+div h5 {
+    text-align: justify;
+    margin: auto;
+    font-size: 1rem;
+    color: rgb(231, 217, 152);
+}
+
+
+
+/* Gradiente */
+
+#grad {
+    background-image: linear-gradient(to bottom, $gradColor1, $gradColor2);
+    }
+    
+
+/* Posicion de Imagenes */
+
+img.leftLogo {
+    display: flex;
+    margin-right: 20px;
+    width:75px;
+    height:110px;
+} 
+
+
+img.center {
+    display: block;
+    margin: 20px auto;
+    width: 40%;
+}
+
+/* Definicion Tamaño Logo Redes */
+img.footlogoscale {
+    width: 100%;
+    height: 100%;
+}
+
+
+/* escala imagen para que se adapte a pantalla y no supere 700px */
+img.scale {
+    width:100%;
+    max-width:700px;
+}
+
+img.scale:hover {
+    transform: scaleX(1.2);
+}
+
+nav.scale {
+    width:100%;
+    max-width:700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+
+/* Font Styles */
+.normal {
+    font-style: normal;
+}
+
+.italica {
+    font-style: italic;
+}
+
+.sizeBig {
+    font-size: 300%;
+}
+.italicBig {
+    font-style: italic;
+    font-size: 300%;
+}
+.weight {
+    color: azure;
+    font-weight: bold;
+    font-size: 150%;
+    text-align: center;
+}
+.spacing {
+    letter-spacing: 10px;
+}
+
+
+
+/* Font Family */
+.impact {
+    font-family:Impact, sans-serif;
+}
+.comicSans {
+    font-family: "Comic Sans MS", sans-serif;
+}
+
+/*posicion Textos */
+.center {
+    text-align: center;
+}
+
